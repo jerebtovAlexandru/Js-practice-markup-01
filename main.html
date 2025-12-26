@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Мой список фильмов</h1>
+            <p class="subtitle">Перетаскивай фильмы между списками, отмечай просмотренные, управляй своей коллекцией</p>
+        </header>
+
+        <main class="main-content">
+            <section class="input-section">
+                <div class="input-group">
+                    <input type="text" id="movieInput" placeholder="Введите название фильма...">
+                    <button id="addButton">Добавить фильм</button>
+                </div>
+                <div class="stats">
+                    <div>Всего фильмов: <span id="totalCount">0</span></div>
+                    <div>К просмотру: <span id="pendingCount">0</span></div>
+                    <div>Просмотрено: <span id="watchedCount">0</span></div>
+                </div>
+                <div class="hint">
+                    💡 Подсказка: Перетаскивай фильмы между списками. Кликни на глазок, чтобы отметить просмотренным. Удаляй ненужные крестиком.
+                </div>
+            </section>
+            <section class="list-section">
+                <div class="list-container">
+                    <div class="list-title">
+                        <span>К просмотру</span>
+                        <span class="counter" id="pendingCounter">0</span>
+                    </div>
+                    <ul id="pendingList" class="movie-list ">
+                        <li class="empty-message">Здесь пока пусто. Добавьте первый фильм!</li>
+                    </ul>
+                </div>
+
+                <div class="list-container">
+                    <div class="list-title">
+                        <span>Просмотрено</span>
+                        <span class="counter" id="watchedCounter">0</span>
+                    </div>
+                    <ul id="watchedList" class="movie-list">
+                        <li class="empty-message">Здесь будут просмотренные фильмы</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Drag&Drop Film List &copy; 2025 Jerebtov Alexandr</p>
+        </footer>
+    </div>
+
+    <script src="./anotherFile.js" type="module"></script>
+</body>
